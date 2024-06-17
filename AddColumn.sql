@@ -1,0 +1,16 @@
+--Add columns
+
+CREATE TABLE persons(
+	person_id SERIAL PRIMARY KEY,
+	first_name VARCHAR(20) NOT NULL,
+	last_name VARCHAR(20) NOT NULL
+);
+
+ALTER TABLE persons
+ADD COLUMN age INT NOT NULL
+
+SELECT * FROM persons
+
+ALTER TABLE persons
+ADD COLUMN nationality VARCHAR(20) NOT NULL,
+ADD COLUMN email VARCHAR(100) UNIQUE
