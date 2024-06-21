@@ -1,0 +1,11 @@
+-- TO_TIMESTAMP()
+
+SELECT TO_TIMESTAMP(
+	'2020-10-28 10:30:25',
+	'YYYY-MM-DD HH:MI:SS'
+)
+
+--it skip spaces
+SELECT TO_TIMESTAMP(
+	'2020      May','YYYY MON'
+)
